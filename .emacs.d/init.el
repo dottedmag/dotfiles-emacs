@@ -1,0 +1,74 @@
+
+;; -*- emacs-lisp -*-
+
+;
+; Global conventions:
+; - everything version-controlled goes to ~/.emacs.d/
+; - external code to be version-controlled goes to ~/.emacs.d/code/ (in load-path)
+; - external code to be checked out manually goes to ~/.lib-emacs/ (not in
+;   load-path), and have to be conditional in ~/.emacs.d/*.el
+; - various files (caches, temporary files etc) go to ~/.var-emacs/
+; - customizations are avoided at all costs
+;
+
+(load "~/.emacs.d/functions.el")
+(add-to-list 'load-path "~/.emacs.d/code")
+
+(load-init
+ "dvorak-adjustments"
+ "auto-save"
+ "backup"
+ "bbdb"
+ "c"
+ "cfengine"
+ "cvs"
+ "debian"
+ "dict"
+ "dired"
+ "django"
+ "e"
+ "editing"
+ "el-get"
+ "epg"
+ "erlang"
+ "fb2"
+ "git"
+ "gnuserv"
+ "gnus-pre"
+ "haml"
+ "html"
+ "i18n"
+ "indent"
+ "j"
+ "javascript"
+; "lisp"
+ "look"
+ "misc"
+ "org-mode"
+ "perl"
+ "php"
+ "programming"
+ "python"
+ "rpm"
+ "tramp-init"
+ "vala"
+ "woman"
+ "x"
+ "xml"
+ "yaml")
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(browse-url-browser-function (quote browse-url-generic))
+ '(browse-url-generic-program "google-chrome")
+ '(canlock-password "fb91c0c9c555c5d0f79559ce2bfa8474922896af")
+ '(safe-local-variable-values (quote ((fci-rule-column . 80) (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-\\|^stamp-h1$\\|^stamp-h\\.in$\\|^TAGS$\\|^cf3lex\\.c$\\|^cf3lex\\.l$\\|^cf3parse\\.h$\\|^cf3parse\\.c$") (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-") (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$|^cf-") (dired-omit-mode . t) (encoding . UTF-8) (debian-changelog-mailing-address . "dottedmag@openinkpot.org") (tags-table-list "~/build/upstream/e/TAGS") (encoding . utf-8)))))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
