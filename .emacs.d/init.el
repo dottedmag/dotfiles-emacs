@@ -65,7 +65,7 @@
  '(browse-url-browser-function (quote browse-url-generic))
  '(browse-url-generic-program "google-chrome")
  '(canlock-password "fb91c0c9c555c5d0f79559ce2bfa8474922896af")
- '(safe-local-variable-values (quote ((fci-rule-column . 80) (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-\\|^stamp-h1$\\|^stamp-h\\.in$\\|^TAGS$\\|^cf3lex\\.c$\\|^cf3lex\\.l$\\|^cf3parse\\.h$\\|^cf3parse\\.c$") (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-") (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$|^cf-") (dired-omit-mode . t) (encoding . UTF-8) (debian-changelog-mailing-address . "dottedmag@openinkpot.org") (tags-table-list "~/build/upstream/e/TAGS") (encoding . utf-8)))))
+ '(safe-local-variable-values (quote ((dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-\\|^stamp-h1$\\|^stamp-h\\.in$\\|^TAGS$\\|^cf3lex\\.c$\\|^cf3lex\\.l$\\|^cf3parse\\.h$\\|^cf3parse\\.c$") (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-") (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$|^cf-") (dired-omit-mode . t) (encoding . UTF-8) (debian-changelog-mailing-address . "dottedmag@openinkpot.org") (tags-table-list "~/build/upstream/e/TAGS") (encoding . utf-8)))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
