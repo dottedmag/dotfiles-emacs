@@ -1,4 +1,3 @@
-
 ;; -*- emacs-lisp -*-
 
 ;
@@ -52,6 +51,7 @@
  "rpm"
  "tramp-init"
  "vala"
+ "whitespace"
  "woman"
  "x"
  "xml"
