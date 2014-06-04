@@ -21,7 +21,3 @@
   (while (re-search-forward "^<p>\\([0-9]+\\)[ 	]" nil t)
     (replace-match
      (format "    <subtitle id=\"n%s.\\1\">%s.\\1</subtitle>\n    <p>\n      " chapter chapter))))
-; 
-;
-;  (while (re-search-forward regexp nil t)
-;    (replace-match to-string nil nil))
