@@ -7,4 +7,3 @@
                       (dired-omit-mode 1))))
 
 (add-to-list 'dired-omit-extensions ".lo")
-(add-to-list 'dired-omit-extensions ".d")
