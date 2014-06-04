@@ -22,7 +22,7 @@
     (start-process "shell-x" nil "x-terminal-emulator")))
 
 (if (eq system-type 'darwin)
-    (defun finder ()
+    (defun f ()
       "Run Finder in current directory"
       (interactive)
       (start-process "finder" nil "open" ".")))
