@@ -5,6 +5,7 @@
 
 (setq blink-cursor-delay 0.3
       blink-cursor-interval 0.1
+      blink-cursor-blinks 0
       column-number-mode t
       inhibit-startup-message t
       show-paren-delay 0
