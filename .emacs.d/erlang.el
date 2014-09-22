@@ -1,7 +1,7 @@
 (when (eq system-type 'darwin)
   (when (file-exists-p "/usr/local/lib/erlang")
     (setq e-path "/usr/local/lib/erlang"
-	  load-path (cons (concat e-path "/lib/tools-2.6.10/emacs/") load-path)
+	  load-path (cons (concat e-path "/lib/tools-2.7/emacs/") load-path)
 	  erlang-root-dir e-path
 	  exec-path (cons (concat e-path "/bin") exec-path))
     (require 'erlang-start)))
