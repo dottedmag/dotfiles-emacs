@@ -44,6 +44,7 @@
  "look"
  "misc"
  "org-mode"
+ "path"
  "perl"
  "php"
  "programming"
