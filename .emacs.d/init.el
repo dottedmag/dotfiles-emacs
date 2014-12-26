@@ -66,7 +66,8 @@
  '(canlock-password "fb91c0c9c555c5d0f79559ce2bfa8474922896af")
  '(safe-local-variable-values
    (quote
-    ((dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-\\|^stamp-h1$\\|^stamp-h\\.in$\\|^TAGS$\\|^cf3lex\\.c$\\|^cf3lex\\.l$\\|^cf3parse\\.h$\\|^cf3parse\\.c$")
+    ((whitespace-line-column . 120)
+     (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-\\|^stamp-h1$\\|^stamp-h\\.in$\\|^TAGS$\\|^cf3lex\\.c$\\|^cf3lex\\.l$\\|^cf3parse\\.h$\\|^cf3parse\\.c$")
      (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-")
      (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$|^cf-")
      (dired-omit-mode . t)
