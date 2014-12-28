@@ -19,5 +19,6 @@
 
 (global-set-key (kbd "C-M-s") 'my-switch-to-ibuffer)
 
+(setq ido-save-directory-list-file "~/.var-emacs/ido.last")
 (require 'ido)
 (ido-mode t)
