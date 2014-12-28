@@ -1,4 +1,7 @@
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(setq package-user-dir "~/.var-emacs/elpa")
+(setq el-get-dir "~/.var-emacs/el-get")
+(add-to-list 'load-path
+             (concat (file-name-as-directory el-get-dir) "el-get"))
 
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer

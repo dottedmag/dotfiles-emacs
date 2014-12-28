@@ -11,7 +11,6 @@
 ;
 
 (load "~/.emacs.d/functions.el")
-(add-to-list 'load-path "~/.emacs.d/code")
 
 (load-init
  "dvorak-adjustments"
@@ -21,7 +20,6 @@
  "cfengine"
  "cvs"
  "debian"
- "dict"
  "dired"
  "django"
  "editing"
@@ -31,8 +29,6 @@
  "fb2"
  "git"
  "gnuserv"
- "haml"
- "html"
  "i18n"
  "indent"
  "j"
@@ -43,10 +39,8 @@
  "org-mode"
  "path"
  "perl"
- "php"
  "programming"
  "python"
- "rpm"
  "tramp-init"
  "whitespace"
  "woman"
