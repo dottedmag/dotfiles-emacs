@@ -33,7 +33,6 @@
  "indent"
  "j"
  "javascript"
-; "lisp"
  "look"
  "misc"
  "org-mode"
