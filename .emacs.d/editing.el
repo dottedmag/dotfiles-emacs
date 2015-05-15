@@ -36,3 +36,15 @@
 
 (if (eq system-type 'darwin)
     (setq ns-right-alternate-modifier 'none))
+
+; Disabling electric indentation based on directory-local variables
+; Needs to be added to mode hooks
+
+(require 'assoc)
+(setq dm-disable-electric nil)
+(aput 'safe-local-variable-values 'dm-disable-electric t)
+
+(defun dm-maybe-disable-electric ()
+  "Disable electric indentation if requested by file-local variable"
+  (if dm-disable-electric
+      (electric-indent-local-mode -1)))
