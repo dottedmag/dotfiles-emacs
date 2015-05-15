@@ -52,17 +52,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(canlock-password "fb91c0c9c555c5d0f79559ce2bfa8474922896af")
- '(safe-local-variable-values
-   (quote
-    ((whitespace-line-column . 120)
-     (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-\\|^stamp-h1$\\|^stamp-h\\.in$\\|^TAGS$\\|^cf3lex\\.c$\\|^cf3lex\\.l$\\|^cf3parse\\.h$\\|^cf3parse\\.c$")
-     (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^cf-")
-     (dired-omit-files . "^\\.?#\\|^\\.$\\|^\\.\\.$|^cf-")
-     (dired-omit-mode . t)
-     (encoding . UTF-8)
-     (debian-changelog-mailing-address . "dottedmag@openinkpot.org")
-     (tags-table-list "~/build/upstream/e/TAGS")
-     (encoding . utf-8))))
  '(send-mail-function (quote sendmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
