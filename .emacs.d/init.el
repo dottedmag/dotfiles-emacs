@@ -26,7 +26,6 @@
  "el-get"
  "epg"
  "erlang"
- "fb2"
  "git"
  "gnuserv"
  "i18n"
