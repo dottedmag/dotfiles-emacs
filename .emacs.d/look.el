@@ -18,8 +18,13 @@
 
 (cond
  ((eq system-type 'darwin)
-  (setq visible-bell nil)
-  (setq ring-bell-function 'ignore))
+  (defun invert-mode-lines ()
+    (invert-face 'mode-line)
+    (invert-face 'mode-line-inactive))
+  (defun invert-mode-lines-bell ()
+    (invert-mode-lines)
+    (run-with-timer 0.1 nil 'invert-mode-lines))
+  (setq ring-bell-function 'invert-mode-lines-bell))
  (t
   (setq visible-bell t)))
 
