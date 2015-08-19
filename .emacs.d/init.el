@@ -3,9 +3,6 @@
 ;
 ; Global conventions:
 ; - everything version-controlled goes to ~/.emacs.d/
-; - external code to be version-controlled goes to ~/.emacs.d/code/ (in load-path)
-; - external code to be checked out manually goes to ~/.lib-emacs/ (not in
-;   load-path), and have to be conditional in ~/.emacs.d/*.el
 ; - various files (caches, temporary files etc) go to ~/.var-emacs/
 ; - customizations are avoided at all costs
 ;
@@ -17,15 +14,12 @@
  "auto-save"
  "backup"
  "c"
- "cfengine"
  "cvs"
  "debian"
  "dired"
- "django"
  "editing"
  "el-get"
  "epg"
- "erlang"
  "git"
  "gnuserv"
  "i18n"
@@ -43,8 +37,7 @@
  "whitespace"
  "woman"
  "x"
- "xml"
- "yaml")
+ "xml")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

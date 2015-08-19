@@ -1,1 +1,0 @@
-(require 'yaml-mode "yaml-mode" 'please-do-not-fail)

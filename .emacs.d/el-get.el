@@ -12,11 +12,11 @@
       (eval-print-last-sexp))))
 
 (setq my-packages '(ample-regexps auto-highlight-symbol cider
-      cl-lib clojure-mode d-mode dash dynamic-fonts el-get
+      cl-lib clojure-mode dash dynamic-fonts el-get
       emacs-goodies-el epl etags-select exec-path-from-shell f
       flycheck font-utils fringe-helper git-gutter
-      git-gutter-fringe git-modes go-mode guide-key haskell-mode
-      haskell-mode-exts list-utils lua-mode magit markdown-mode
+      git-gutter-fringe git-modes guide-key haskell-mode
+      haskell-mode-exts list-utils magit markdown-mode
       org-mode package pcache persistent-soft pkg-info popwin
       queue rnc-mode s ucs-utils unicode-fonts yaml-mode))
 
