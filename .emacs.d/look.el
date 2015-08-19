@@ -10,8 +10,9 @@
       inhibit-startup-message t
       show-paren-delay 0
       truncate-partial-width-windows nil
-      tooltip-use-echo-area t
       diff-switches "-u")
+
+(tooltip-mode 0)
 
 ; Under OS X visible bell is ugly
 
