@@ -31,6 +31,7 @@
  "perl"
  "programming"
  "python"
+ "savehist"
  "tramp-init"
  "whitespace"
  "woman"
