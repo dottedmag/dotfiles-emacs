@@ -18,6 +18,6 @@
       git-gutter-fringe git-modes guide-key haskell-mode
       haskell-mode-exts list-utils magit markdown-mode
       org-mode package pcache persistent-soft pkg-info popwin
-      queue rnc-mode s ucs-utils unicode-fonts yaml-mode))
+      queue rnc-mode s ucs-utils unicode-fonts web-mode yaml-mode))
 
 (el-get 'sync my-packages)
