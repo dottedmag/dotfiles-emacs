@@ -14,6 +14,7 @@
  "auto-save"
  "backup"
  "c"
+ "copyright"
  "cvs"
  "debian"
  "dired"
