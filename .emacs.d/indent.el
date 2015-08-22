@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (defun indent-buffer ()
   "Indent current buffer"
   (interactive)

@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (set-language-environment "UTF-8")
 
 (define-coding-system-alias 'UTF-8 'utf-8)

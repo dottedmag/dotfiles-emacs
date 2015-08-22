@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (blink-cursor-mode t)
 (show-paren-mode 1)
 

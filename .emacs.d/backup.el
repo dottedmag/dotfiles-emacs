@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (setq backup-by-copying t
       delete-old-versions t
       kept-old-versions 1

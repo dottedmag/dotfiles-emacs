@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 ;
 ; Remapping keyboard to feel comfortable in Emacs with Dvorak layout
 ; Switches C-q <-> C-x and M-q <-> M-x

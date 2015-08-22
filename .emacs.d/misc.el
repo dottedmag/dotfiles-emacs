@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 ; remove GNU advertisments
 (mapcar 'global-unset-key
         '("\C-h\C-c" "\C-h\C-d" "\C-h\C-p" "\C-h\C-w" "\C-hn" "\C-h\C-n"

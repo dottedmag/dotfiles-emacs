@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 ;;
 ;; Stuff related to all programming activities (version control, compilation etc)
 ;;

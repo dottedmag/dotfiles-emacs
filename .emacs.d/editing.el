@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 ;
 ; Settings related to editing any type of text
 ;

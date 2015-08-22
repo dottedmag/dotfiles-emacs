@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (require 'woman)
 
 (setq woman-use-own-frame nil

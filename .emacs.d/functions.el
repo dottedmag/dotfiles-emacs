@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (defun add-to-mode-alist-ext (mode &rest extensions)
   "Registers association of given file EXTENSIONS with the given MODE"
   (dolist (extension extensions)

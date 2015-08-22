@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (defun gitk ()
   "Run gitk in current directory"
   (interactive)

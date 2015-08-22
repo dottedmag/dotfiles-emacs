@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (require 'cc-mode)
 
 (setq c-default-style "stroustrup"

@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (require 'org-install)
 (require 'org-mobile)
 

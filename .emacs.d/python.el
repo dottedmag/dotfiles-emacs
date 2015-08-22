@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 (require 'python)
 
 ; Autoindentation after "Return"

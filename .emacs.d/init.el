@@ -1,5 +1,3 @@
-;; -*- emacs-lisp -*-
-
 ;
 ; Global conventions:
 ; - everything version-controlled goes to ~/.emacs.d/
