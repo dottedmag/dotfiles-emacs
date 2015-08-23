@@ -15,7 +15,7 @@
       cl-lib clojure-mode dash dynamic-fonts el-get
       emacs-goodies-el epl etags-select exec-path-from-shell f
       flycheck font-utils fringe-helper git-gutter
-      git-gutter-fringe git-modes guide-key haskell-mode
+      git-gutter-fringe guide-key haskell-mode
       haskell-mode-exts list-utils magit markdown-mode
       org-mode package persistent-soft pkg-info popwin
       queue rnc-mode s ucs-utils unicode-fonts web-mode yaml-mode))
