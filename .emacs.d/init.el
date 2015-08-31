@@ -30,6 +30,7 @@
  "org-mode"
  "path"
  "perl"
+ "popup"
  "programming"
  "python"
  "rust"
