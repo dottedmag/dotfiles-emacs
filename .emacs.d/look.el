@@ -27,3 +27,8 @@
   (setq visible-bell t)))
 
 (global-font-lock-mode t)
+
+(if (eq system-type 'darwin)
+    (set-face-attribute 'default nil
+                        :family "Liberation Mono"
+                        :height 120))
