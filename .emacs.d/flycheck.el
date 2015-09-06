@@ -4,17 +4,21 @@
       flycheck-idle-change-delay 5
       flycheck-display-errors-delay 0)
 
-;; popup does not work well with whitespace-mode, so disable ws-mode while
-;; viewing a popup in flycheck.
+;; flycheck-pos-tip disabled -- does not work well yet
+;; - intercepts keys, such as C-x C-s
+;; - breaks popup UI if flycheck is executed while popup is shown
 
-(defun dm>flycheck-pos-tip-error-messages (errors)
-  (let ((ws-mode global-whitespace-mode))
-    (if ws-mode
-        (global-whitespace-mode -1))
-    (flycheck-pos-tip-error-messages errors)
-    (if ws-mode
-        (global-whitespace-mode))))
+;; ;; popup does not work well with whitespace-mode, so disable ws-mode while
+;; ;; viewing a popup in flycheck.
 
-(eval-after-load 'flycheck
-  '(custom-set-variables
-   '(flycheck-display-errors-function #'dm>flycheck-pos-tip-error-messages)))
+;; (defun dm>flycheck-pos-tip-error-messages (errors)
+;;   (let ((ws-mode global-whitespace-mode))
+;;     (if ws-mode
+;;         (global-whitespace-mode -1))
+;;     (flycheck-pos-tip-error-messages errors)
+;;     (if ws-mode
+;;         (global-whitespace-mode))))
+
+;; (eval-after-load 'flycheck
+;;   '(custom-set-variables
+;;    '(flycheck-display-errors-function #'dm>flycheck-pos-tip-error-messages)))
