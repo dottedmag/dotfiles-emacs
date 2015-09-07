@@ -19,12 +19,6 @@
     (interactive)
     (start-process "shell-x" nil "x-terminal-emulator")))
 
-(if (eq system-type 'darwin)
-    (defun f ()
-      "Run Finder in current directory"
-      (interactive)
-      (start-process "finder" nil "open" ".")))
-
 (when (eq system-type 'darwin)
   (defun raise-new-cocoa-frame (frame)
     (if (display-graphic-p)
