@@ -25,6 +25,7 @@
  "indent"
  "j"
  "javascript"
+ "json"
  "look"
  "misc"
  "org-mode"

@@ -18,7 +18,7 @@
       emacs-goodies-el epl etags-select exec-path-from-shell f
       flycheck flycheck-pos-tip flycheck-rust font-utils fringe-helper
       git-gutter git-gutter-fringe guide-key haskell-mode
-      haskell-mode-exts list-utils magit markdown-mode
+      haskell-mode-exts json-mode list-utils magit markdown-mode
       org-mode package persistent-soft pkg-info popwin popup
       queue rnc-mode s ucs-utils unicode-fonts web-mode yaml-mode))
 
