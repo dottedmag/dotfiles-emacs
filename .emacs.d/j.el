@@ -24,3 +24,14 @@
 
 (add-to-list 'auto-mode-alist '("/vu/.*\\.mk$" . perl-mode))
 (add-to-list 'auto-mode-alist '("/vu/.*/Makefile$" . perl-mode))
+
+(require 'flycheck)
+
+(flycheck-define-checker fyvaproldzh
+  ""
+  :command ("runfyvaproldzh" source-inplace)
+  :error-patterns
+  ((error line-start (file-name) ":" line ":" column ": " (message) line-end))
+  :modes (js-mode))
+
+(add-to-list 'flycheck-checkers 'fyvaproldzh)
