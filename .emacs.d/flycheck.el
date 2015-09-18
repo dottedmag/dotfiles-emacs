@@ -4,6 +4,8 @@
       flycheck-idle-change-delay 5
       flycheck-display-errors-delay 0)
 
+(global-flycheck-mode t)
+
 ;; flycheck-pos-tip disabled -- does not work well yet
 ;; - intercepts keys, such as C-x C-s
 ;; - breaks popup UI if flycheck is executed while popup is shown
