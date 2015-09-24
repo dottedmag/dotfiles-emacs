@@ -36,6 +36,7 @@
  "python"
  "rust"
  "savehist"
+ "smartparens"
  "tramp-init"
  "whitespace"
  "woman"

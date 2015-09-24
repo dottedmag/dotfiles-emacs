@@ -14,9 +14,9 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
 
 (setq my-packages '(ample-regexps auto-highlight-symbol cider
-      cl-lib clojure-mode dash dynamic-fonts el-get
+      cl-lib clojure-mode dash dynamic-fonts el-get use-package
       emacs-goodies-el epl etags-select exec-path-from-shell f
-      flycheck flycheck-rust font-utils fringe-helper
+      flycheck flycheck-rust font-utils fringe-helper smartparens
       git-gutter git-gutter-fringe guide-key haskell-mode
       haskell-mode-exts json-mode list-utils magit markdown-mode
       org-mode package persistent-soft pkg-info popwin popup
