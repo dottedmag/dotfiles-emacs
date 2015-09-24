@@ -1,8 +1,3 @@
-(setq default-frame-alist
-      '((menu-bar-lines . 0)
-        (tool-bar-lines . 0)
-        (vertical-scroll-bars . nil)))
-
 (setq mouse-yank-at-point t
       frame-title-format "%b - emacs")
 (mouse-avoidance-mode 'exile)

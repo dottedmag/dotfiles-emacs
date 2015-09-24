@@ -4,9 +4,8 @@
     (add-to-list 'auto-mode-alist (cons (concat "\\." extension "$") mode))))
 
 (defun load-init (&rest modules)
-  "Loads given modules from ~/.emacs.d"
   (dolist (module modules)
-    (load (format "~/.emacs.d/%s" module))))
+    (load (format "~/.emacs.d/lisp/%s" module))))
 
 (defun show-trailing-whitespace ()
   (setq show-trailing-whitespace t))

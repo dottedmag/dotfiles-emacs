@@ -1,47 +1,53 @@
-;
-; Global conventions:
-; - everything version-controlled goes to ~/.emacs.d/
-; - various files (caches, temporary files etc) go to ~/.var-emacs/
-; - customizations are avoided at all costs
-;
+;;
+;; Global conventions:
+;; - everything version-controlled goes to ~/.emacs.d/
+;; - various files (caches, temporary files etc) go to ~/.var-emacs/
+;; - customizations are avoided at all costs
+;;
 
-(load "~/.emacs.d/functions.el")
+(setq dm-lisp-dir (expand-file-name "lisp" user-emacs-directory))
+
+(add-to-list 'load-path dm-lisp-dir)
+
+;; Improve look as soon as possible
+(require 'dm-look)
+
+(load "~/.emacs.d/lisp/dm-functions.el")
 
 (load-init
- "dvorak-adjustments"
- "auto-save"
- "backup"
- "c"
- "cvs"
- "debian"
- "dired"
- "editing"
- "el-get"
- "emacsclient"
- "epg"
- "flycheck"
- "git"
- "i18n"
- "indent"
- "j"
- "javascript"
- "json"
- "look"
- "misc"
- "org-mode"
- "path"
- "perl"
- "popup"
- "programming"
- "python"
- "rust"
- "savehist"
- "smartparens"
- "tramp-init"
- "whitespace"
- "woman"
- "x"
- "xml")
+ "dm-dvorak"
+ "dm-auto-save"
+ "dm-backup"
+ "dm-c"
+ "dm-cvs"
+ "dm-debian"
+ "dm-dired"
+ "dm-editing"
+ "dm-el-get"
+ "dm-emacsclient"
+ "dm-epg"
+ "dm-flycheck"
+ "dm-git"
+ "dm-i18n"
+ "dm-indent"
+ "dm-j"
+ "dm-javascript"
+ "dm-json"
+ "dm-misc"
+ "dm-org-mode"
+ "dm-path"
+ "dm-perl"
+ "dm-popup"
+ "dm-programming"
+ "dm-python"
+ "dm-rust"
+ "dm-savehist"
+ "dm-smartparens"
+ "dm-tramp"
+ "dm-whitespace"
+ "dm-woman"
+ "dm-x"
+ "dm-xml")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
