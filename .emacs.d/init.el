@@ -15,6 +15,8 @@
 (load "~/.emacs.d/lisp/dm-functions.el")
 
 (load-init
+ "dm-el-get"
+ "dm-path"
  "dm-dvorak"
  "dm-auto-save"
  "dm-backup"
@@ -23,7 +25,6 @@
  "dm-debian"
  "dm-dired"
  "dm-editing"
- "dm-el-get"
  "dm-emacsclient"
  "dm-epg"
  "dm-flycheck"
@@ -35,7 +36,6 @@
  "dm-json"
  "dm-misc"
  "dm-org-mode"
- "dm-path"
  "dm-perl"
  "dm-popup"
  "dm-programming"
