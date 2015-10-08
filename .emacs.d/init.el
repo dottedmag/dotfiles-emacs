@@ -5,6 +5,9 @@
 ;; - customizations are avoided at all costs
 ;;
 
+;; It's XXI century
+(setq gc-cons-threshold 100000000)
+
 (setq dm-lisp-dir (expand-file-name "lisp" user-emacs-directory))
 
 (add-to-list 'load-path dm-lisp-dir)
