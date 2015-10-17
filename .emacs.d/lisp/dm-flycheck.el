@@ -2,7 +2,8 @@
 
 (setq flycheck-check-syntax-automatically '(save idle-change mode-enabled)
       flycheck-idle-change-delay 5
-      flycheck-display-errors-delay 0)
+      flycheck-display-errors-delay 0
+      flycheck-temp-prefix "#.flycheck")
 
 (global-flycheck-mode t)
 
