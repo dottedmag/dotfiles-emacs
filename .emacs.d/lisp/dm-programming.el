@@ -4,8 +4,9 @@
 
 (setq compilation-ask-about-save nil
       vc-follow-symlinks t
-      cvs-auto-remove-directories nil
-      vc-handled-backends '(RCS CVS SVN SCCS Bzr Git Hg Arch MCVS))
+      cvs-auto-remove-directories nil)
+
+(delete 'Mtn vc-handled-backends)
 
 (setq-default indent-tabs-mode nil
               sh-basic-offset 2)
