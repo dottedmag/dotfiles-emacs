@@ -7,10 +7,20 @@
 (eval-when-compile
   (require 'whitespace))
 
-(defun dm-go-mode-hook ()
-  "Setup go mode."
+(defun dm-go-setup-whitespace ()
+  "Adjust `whitespace-mode' settings for Go."
+  ;; FIXME: Find the way to use default background color, not fied "white"
+  ;; FIXME: Light gray highlight of TABs inside selection
+  (face-remap-add-relative 'whitespace-tab :background "white")
   (make-local-variable 'whitespace-line-column)
   (setq whitespace-line-column 120)
+  (make-local-variable 'whitespace-style)
+  (add-to-list 'whitespace-style 'indentation::tab 'space-after-tab::tab
+                  'space-before-tab::tab))
+
+(defun dm-go-mode-hook ()
+  "Setup `go-mode'."
+  (dm-go-setup-whitespace)
   (add-hook 'before-save-hook 'gofmt-before-save nil t))
 
 (add-hook 'go-mode-hook 'dm-go-mode-hook)
