@@ -30,6 +30,7 @@
  "dm-editing"
  "dm-emacsclient"
  "dm-epg"
+ "dm-elisp"
  "dm-flycheck"
  "dm-git"
  "dm-go"
