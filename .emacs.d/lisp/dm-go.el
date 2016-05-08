@@ -5,7 +5,10 @@
 ;;; Code:
 
 (eval-when-compile
-  (require 'whitespace))
+  (require 'whitespace)
+  (require 'go-mode))
+
+(setq gofmt-command (expand-file-name "~/g/bin/goimports"))
 
 (defun dm-go-setup-whitespace ()
   "Adjust `whitespace-mode' settings for Go."
