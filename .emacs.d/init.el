@@ -32,6 +32,7 @@
  "dm-epg"
  "dm-flycheck"
  "dm-git"
+ "dm-go"
  "dm-i18n"
  "dm-indent"
  "dm-j"
