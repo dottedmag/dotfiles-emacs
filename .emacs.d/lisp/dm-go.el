@@ -8,6 +8,8 @@
   (require 'whitespace)
   (require 'go-mode))
 
+(defconst dm-golint (expand-file-name "~/g/bin/golint"))
+
 (setq gofmt-command (expand-file-name "~/g/bin/goimports"))
 
 (defun dm-go-setup-whitespace ()
@@ -22,9 +24,16 @@
   (add-to-list 'whitespace-style 'space-after-tab::tab)
   (add-to-list 'whitespace-style 'space-before-tab::tab))
 
+(defun dm-go-setup-compile ()
+  "Run a bunch of linters on Go code."
+  (make-local-variable 'compile-command)
+  (setq compile-command
+        (concat "go build -v && go test -v && go vet && " dm-golint)))
+
 (defun dm-go-mode-hook ()
   "Setup `go-mode'."
   (dm-go-setup-whitespace)
+  (dm-go-setup-compile)
   (add-hook 'before-save-hook 'gofmt-before-save nil t))
 
 (add-hook 'go-mode-hook 'dm-go-mode-hook)
