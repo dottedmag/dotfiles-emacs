@@ -6,11 +6,13 @@
 
 (eval-when-compile
   (require 'whitespace)
-  (require 'go-mode))
+  (require 'go-mode)
+  (require 'go-eldoc))
 
 (defconst dm-golint (expand-file-name "~/g/bin/golint"))
 
-(setq gofmt-command (expand-file-name "~/g/bin/goimports"))
+(setq gofmt-command (expand-file-name "~/g/bin/goimports")
+      go-eldoc-gocode (expand-file-name "~/g/bin/gocode"))
 
 (defun dm-go-setup-whitespace ()
   "Adjust `whitespace-mode' settings for Go."
