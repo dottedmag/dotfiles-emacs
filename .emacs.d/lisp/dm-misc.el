@@ -18,5 +18,6 @@
 (global-set-key (kbd "C-M-s") 'my-switch-to-ibuffer)
 
 (setq ido-save-directory-list-file "~/.var-emacs/ido.last")
+(setq pcache-directory "~/.var-emacs/pcache/")
 (require 'ido)
 (ido-mode t)
