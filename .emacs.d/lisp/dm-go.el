@@ -40,5 +40,9 @@
 
 (add-hook 'go-mode-hook 'dm-go-mode-hook)
 
+(when (eq system-type 'darwin)
+  (require 'exec-path-from-shell)
+  (exec-path-from-shell-copy-env "GOPATH"))
+
 (provide 'dm-go)
 ;;; dm-go.el ends here
