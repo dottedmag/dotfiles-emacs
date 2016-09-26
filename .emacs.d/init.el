@@ -40,6 +40,7 @@
  "dm-javascript"
  "dm-json"
  "dm-misc"
+ "dm-objc"
  "dm-org-mode"
  "dm-perl"
  "dm-popup"
