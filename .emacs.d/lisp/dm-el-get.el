@@ -20,6 +20,6 @@
       git-gutter git-gutter-fringe guide-key haskell-mode go-mode
       haskell-mode-exts json-mode list-utils magit markdown-mode
       org-mode package persistent-soft pkg-info popwin popup go-eldoc
-      queue rnc-mode s ucs-utils unicode-fonts web-mode yaml-mode))
+      queue rnc-mode s tid-mode ucs-utils unicode-fonts web-mode yaml-mode))
 
 (el-get 'sync my-packages)

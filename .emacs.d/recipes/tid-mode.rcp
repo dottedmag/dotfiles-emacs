@@ -1,0 +1,4 @@
+(:name tid-mode
+       :description "Major mode for editing TiddlyWiki5 files"
+       :type github
+       :pkgname "mwfogleman/tid-mode")

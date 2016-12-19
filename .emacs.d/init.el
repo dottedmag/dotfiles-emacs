@@ -49,6 +49,7 @@
  "dm-rust"
  "dm-savehist"
  "dm-smartparens"
+ "dm-tiddlywiki"
  "dm-tramp"
  "dm-whitespace"
  "dm-woman"
