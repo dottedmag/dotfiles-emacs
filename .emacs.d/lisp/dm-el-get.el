@@ -20,11 +20,11 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
 
 (defvar dm-my-packages '(ample-regexps auto-highlight-symbol cider
-      cl-lib clojure-mode dash dynamic-fonts el-get use-package
-      emacs-goodies-el epl etags-select exec-path-from-shell f
-      flycheck flycheck-rust font-utils fringe-helper smartparens
+      cl-lib dash dynamic-fonts el-get use-package multiple-cursors
+      emacs-goodies-el epl etags-select exec-path-from-shell f edn
+      flycheck flycheck-rust font-utils fringe-helper smartparens clj-refactor
       git-gutter git-gutter-fringe guide-key haskell-mode go-mode
-      haskell-mode-exts json-mode list-utils magit markdown-mode
+      json-mode list-utils magit markdown-mode yasnippet paredit hydra
       org-mode package persistent-soft pkg-info popwin popup go-eldoc
       queue rnc-mode s tid-mode ucs-utils unicode-fonts web-mode yaml-mode))
 
