@@ -33,6 +33,8 @@
 ;;; A copy global-auto-revert-mode with a "fix" removed:
 ;;; use notification services.
 
+(require 'autorevert)
+
 ;;;###autoload
 (define-minor-mode global-auto-revert-mode
   "Toggle Global Auto Revert mode.
