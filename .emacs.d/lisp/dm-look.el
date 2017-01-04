@@ -1,4 +1,9 @@
-;; Turn off useless mouse interface
+;;; dm-look.el -- How Emacs should look like
+
+;;; Commentary:
+
+;;; Code:
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -19,19 +24,25 @@
 
 (tooltip-mode 0)
 
-; Under OS X visible bell is ugly
+;;; Under OS X visible bell is ugly, do our own
 
-(cond
- ((eq system-type 'darwin)
-  (defun invert-mode-lines ()
-    (invert-face 'mode-line)
-    (invert-face 'mode-line-inactive))
-  (defun invert-mode-lines-bell ()
-    (invert-mode-lines)
-    (run-with-timer 0.1 nil 'invert-mode-lines))
-  (setq ring-bell-function 'invert-mode-lines-bell))
- (t
-  (setq visible-bell t)))
+(defun dm-invert-mode-line ()
+  "Invert mode line colors."
+  (invert-face 'mode-line)
+  (invert-face 'mode-line-inactive))
+
+(defun dm-bell-flash-mode-line ()
+  "Do a visual bell by quickly flashing mode line."
+  (dm-invert-mode-line)
+  (run-with-timer 0.1 nil 'dm-invert-mode-line))
+
+(when (eq system-type 'darwin)
+  (setq ring-bell-function 'dm-bell-flash-mode-line))
+
+;;; Under other OSes visual bell is fine
+
+(unless (eq system-type 'darwin)
+  (setq visible-bell t))
 
 (global-font-lock-mode t)
 
@@ -41,3 +52,4 @@
                         :height 120))
 
 (provide 'dm-look)
+;;; dm-look.el ends here
