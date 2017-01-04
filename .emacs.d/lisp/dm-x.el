@@ -37,7 +37,9 @@
 
 (defun dm-darwin-keybindings ()
   "Set keybindings better aligned with (my understanding of) OS X."
+  (global-unset-key (kbd "s-k")) ; kill-this-buffer
   (global-set-key (kbd "s-o") 'ido-find-file)
+  (global-set-key (kbd "s-w") 'kill-this-buffer)
   (global-set-key (kbd "s-t") 'dm-darwin-new-buffer))
 
 (defun dm-darwin-setup ()
