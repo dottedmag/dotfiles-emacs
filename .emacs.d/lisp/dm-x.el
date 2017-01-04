@@ -1,3 +1,9 @@
+;;; dm-x -- GUI config of Emacs
+
+;;; Commentary:
+
+;;; Code:
+
 (setq mouse-yank-at-point t
       frame-title-format "%b - emacs")
 (mouse-avoidance-mode 'exile)
@@ -19,3 +25,6 @@
     (if (display-graphic-p)
         (select-frame-set-input-focus (selected-frame))))
   (add-hook 'after-make-frame-functions 'raise-new-cocoa-frame t))
+
+(provide 'dm-x)
+;;; dm-x.el ends here
