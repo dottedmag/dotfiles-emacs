@@ -10,9 +10,9 @@
 
 (package-initialize)
 
-(setq dm-lisp-dir (expand-file-name "lisp" user-emacs-directory))
+(defvar dm/lisp-dir (expand-file-name "lisp" user-emacs-directory))
 
-(add-to-list 'load-path dm-lisp-dir)
+(add-to-list 'load-path dm/lisp-dir)
 
 ;; Improve look as soon as possible
 (require 'dm-look)
