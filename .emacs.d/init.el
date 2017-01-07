@@ -27,6 +27,7 @@
  "dm-backup"
  "dm-c"
  "dm-cvs"
+ "dm-clojure"
  "dm-debian"
  "dm-dired"
  "dm-editing"

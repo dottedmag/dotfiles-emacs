@@ -19,6 +19,7 @@
       blink-cursor-blinks 0
       column-number-mode t
       show-paren-delay 0
+      show-paren-when-point-inside-paren t
       truncate-partial-width-windows nil
       diff-switches "-u")
 
