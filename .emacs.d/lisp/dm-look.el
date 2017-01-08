@@ -49,5 +49,37 @@
                         :family "Liberation Mono"
                         :height 120))
 
+(face-spec-set
+ 'font-lock-keyword-face
+ '((((background light)) :foreground "black")
+   (((background dark))  :foreground "white")))
+
+(face-spec-set
+ 'font-lock-comment-face
+ '((default :slant italic)
+   (((background light)) :foreground "LightYellow4")
+   (((background dark)) :foreground "light gray")))
+
+(face-spec-set
+ 'font-lock-variable-name-face
+ '((((background light)) :foreground "blue1")
+   (((background dark)) :foreground "sky blue")))
+
+(face-spec-set
+ 'font-lock-string-face
+ '((((background light)) :foreground "green4")
+   (((background dark)) :foreground "light green")))
+
+(face-spec-set
+ 'font-lock-constant-face
+ '((default :slant italic)
+   (((background light)) :foreground "blue4")
+   (((background dark)) :foreground "orange")))
+
+(face-spec-set
+ 'font-lock-type-face
+ '((((background light)) :foreground "blue4")
+   (((background dark)) :foreground "orange")))
+
 (provide 'dm-look)
 ;;; dm-look.el ends here
