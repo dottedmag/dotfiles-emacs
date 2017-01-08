@@ -45,6 +45,7 @@
  "dm-misc"
  "dm-objc"
  "dm-org-mode"
+ "dm-parens"
  "dm-perl"
  "dm-popup"
  "dm-programming"

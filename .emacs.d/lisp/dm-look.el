@@ -12,23 +12,13 @@
 (setq inhibit-startup-message t)
 
 (blink-cursor-mode t)
-(show-paren-mode 1)
-
-(require 'paren)
 
 (setq blink-cursor-delay 0.3
       blink-cursor-interval 0.1
       blink-cursor-blinks 0
       column-number-mode t
-      show-paren-delay 0
-      show-paren-style 'expression
-      show-paren-when-point-inside-paren t
       truncate-partial-width-windows nil
       diff-switches "-u")
-
-(face-spec-set 'show-paren-match
-               '((t :inherit extra-bold))
-               'face-defface-spec)
 
 (tooltip-mode 0)
 
