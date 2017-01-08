@@ -2,6 +2,8 @@
 
 ;;; Commentary:
 
+;;; FIXME: add/remove hook in show-paren-mode-hook
+
 ;;; Code:
 
 (require 'paren)
