@@ -13,7 +13,7 @@
       show-paren-when-point-inside-paren t)
 
 (face-spec-set 'show-paren-match
-               '((t :inherit extra-bold))
+               '((t :weight bold))
                'face-defface-spec)
 
 (defvar dm/parens-last-point 0)
