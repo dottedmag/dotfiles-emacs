@@ -17,6 +17,8 @@
 
 (global-set-key (kbd "C-M-s") 'my-switch-to-ibuffer)
 
+(setq sentence-end-double-space nil)
+
 (setq ido-save-directory-list-file "~/.var-emacs/ido.last")
 (setq pcache-directory "~/.var-emacs/pcache/")
 (require 'ido)
