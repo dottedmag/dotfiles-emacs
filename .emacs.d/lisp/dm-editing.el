@@ -5,6 +5,8 @@
 (setq case-fold-search 'ignore-case-in-search)
 
 (setq-default fill-column 80)
+(setq line-move-visual nil
+      track-eol t)
 
 (put 'narrow-to-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
