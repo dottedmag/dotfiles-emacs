@@ -4,6 +4,10 @@
 
 ;;; Code:
 
+;; Enable which-key
+
+(which-key-mode t)
+
 ;; remove GNU advertisments
 
 (mapcar 'global-unset-key

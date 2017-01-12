@@ -29,7 +29,7 @@
       markdown-mode yasnippet paredit hydra org-mode package
       persistent-soft pkg-info popwin popup go-eldoc queue
       rnc-mode s tid-mode ucs-utils unicode-fonts web-mode
-      yaml-mode))
+      yaml-mode which-key))
 
 (el-get 'sync dm-my-packages)
 
