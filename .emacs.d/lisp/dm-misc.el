@@ -1,4 +1,11 @@
-; remove GNU advertisments
+;;; dm-misc -- Miscellaneous settings
+
+;;; Commentary:
+
+;;; Code:
+
+;; remove GNU advertisments
+
 (mapcar 'global-unset-key
         '("\C-h\C-c" "\C-h\C-d" "\C-h\C-p" "\C-h\C-w" "\C-hn" "\C-h\C-n"
           "\C-hP" "\C-h\C-n" "\C-h\C-m" "\C-hF"))
@@ -23,3 +30,6 @@
 (setq pcache-directory "~/.var-emacs/pcache/")
 (require 'ido)
 (ido-mode t)
+
+(provide 'dm-misc)
+;;; dm-misc.el ends here
