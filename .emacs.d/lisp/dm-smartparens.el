@@ -4,6 +4,10 @@
 
 ;;; Code:
 
+(require 'dm-el-get)
+
+(dm-el-get 'smartparens)
+
 (require 'smartparens-config)
 
 (defun dm/enable-smartparens ()

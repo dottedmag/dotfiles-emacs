@@ -6,6 +6,10 @@
 
 ;; Enable which-key
 
+(require 'dm-el-get)
+
+(dm-el-get 'which-key)
+
 (which-key-mode t)
 
 ;; remove GNU advertisments

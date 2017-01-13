@@ -4,6 +4,10 @@
 
 ;;; Code:
 
+(require 'dm-el-get)
+
+(dm-el-get 'rainbow-delimiters)
+
 (require 'rainbow-delimiters)
 
 (defun dm/set-rainbow-colors ()

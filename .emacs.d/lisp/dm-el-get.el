@@ -4,8 +4,7 @@
 
 ;;; Code:
 
-(setq package-user-dir "~/.var-emacs/elpa")
-(setq el-get-dir "~/.var-emacs/el-get")
+(defvar el-get-dir "~/.var-emacs/el-get")
 (add-to-list 'load-path
              (concat (file-name-as-directory el-get-dir) "el-get"))
 
@@ -17,21 +16,37 @@
       (goto-char (point-max))
       (eval-print-last-sexp))))
 
+(require 'el-get)
+(require 'cl-lib)
+(require 'package)
+
+(setq package-user-dir "~/.var-emacs/elpa")
+
 (add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
 
-(defvar dm-my-packages '(ample-regexps auto-highlight-symbol
-      cider rainbow-delimiters cl-lib dash dynamic-fonts el-get
-      use-package multiple-cursors emacs-goodies-el epl
-      etags-select exec-path-from-shell f edn flycheck
-      flycheck-rust font-utils fringe-helper smartparens
-      clj-refactor git-gutter git-gutter-fringe guide-key
-      haskell-mode go-mode json-mode list-utils magit
-      markdown-mode yasnippet paredit hydra org-mode package
-      persistent-soft pkg-info popwin popup go-eldoc queue
-      rnc-mode s tid-mode ucs-utils unicode-fonts web-mode
-      yaml-mode which-key))
+(defvar dm-el-get-requested '(el-get))
 
-(el-get 'sync dm-my-packages)
+(defun dm-el-get (&rest rest)
+  "Install REST packages and mark them as requested."
+  (setq dm-el-get-requested (append rest dm-el-get-requested))
+  (apply 'el-get 'sync rest))
+
+(defun dm-el-get-garbage ()
+  "Get garbage packages."
+  (let* ((packages-to-keep (el-get-dependencies dm-el-get-requested))
+         (installed (el-get-list-package-names-with-status "installed")))
+    (cl-set-difference (mapcar 'el-get-as-symbol installed)
+                       (mapcar 'el-get-as-symbol packages-to-keep))))
+
+(defun dm-el-get-list-garbage ()
+  "Print installed garbage packages."
+  (interactive)
+  (message (format "%s" (dm-el-get-garbage))))
+
+(defun dm-el-get-remove-garbage ()
+  "Remove installed garbage packages."
+  (interactive)
+  (el-get-cleanup dm-el-get-requested))
 
 (provide 'dm-el-get)
 ;;; dm-el-get.el ends here

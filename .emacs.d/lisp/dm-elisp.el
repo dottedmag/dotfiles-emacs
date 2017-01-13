@@ -5,6 +5,7 @@
 ;;; Code:
 
 (require 'dm-rainbow)
+(require 'dm-flycheck)
 
 (eval-when-compile
   (require 'flycheck))

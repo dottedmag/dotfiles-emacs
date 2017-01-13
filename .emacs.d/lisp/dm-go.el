@@ -4,6 +4,10 @@
 
 ;;; Code:
 
+(require 'dm-el-get)
+
+(dm-el-get 'go-mode 'go-eldoc)
+
 (eval-when-compile
   (require 'whitespace)
   (require 'go-mode)

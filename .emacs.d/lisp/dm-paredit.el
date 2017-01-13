@@ -4,6 +4,10 @@
 
 ;;; Code:
 
+(require 'dm-el-get)
+
+(dm-el-get 'paredit)
+
 (require 'paredit)
 (require 'eldoc)
 

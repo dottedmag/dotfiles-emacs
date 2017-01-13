@@ -4,9 +4,12 @@
 
 ;;; Code:
 
+(require 'dm-el-get)
 (require 'dm-paredit)
 (require 'dm-rainbow)
 (require 'dm-prettify-symbols)
+
+(dm-el-get 'cider 'clj-refactor)
 
 (defvar dm/clojure-prettified-symbols
   '(("not=" . ?≠)))

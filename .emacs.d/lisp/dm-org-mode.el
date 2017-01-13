@@ -1,3 +1,13 @@
+;;; dm-org-mode -- Settings for org-mode
+
+;;; Commentary:
+
+;;; Code:
+
+(require 'dm-el-get)
+
+(dm-el-get 'org-mode)
+
 (require 'org-install)
 (require 'org-mobile)
 
@@ -23,3 +33,6 @@
 ; Shortcut for M-x calendar
 
 (defalias 'cal 'calendar)
+
+(provide 'dm-org-mode)
+;;; dm-org-mode.el ends here
