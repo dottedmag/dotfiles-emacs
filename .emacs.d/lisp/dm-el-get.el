@@ -24,12 +24,14 @@
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/recipes")
 
-(defvar dm-el-get-requested '(el-get))
+(defvar dm-el-get-requested ())
 
 (defun dm-el-get (&rest rest)
   "Install REST packages and mark them as requested."
   (setq dm-el-get-requested (append rest dm-el-get-requested))
   (apply 'el-get 'sync rest))
+
+(dm-el-get 'el-get)
 
 (defun dm-el-get-garbage ()
   "Get garbage packages."
