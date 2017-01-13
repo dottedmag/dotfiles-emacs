@@ -48,6 +48,7 @@
  "dm-parens"
  "dm-perl"
  "dm-popup"
+ "dm-prettify-symbols"
  "dm-programming"
  "dm-python"
  "dm-rust"
