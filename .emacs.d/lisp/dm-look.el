@@ -4,7 +4,17 @@
 
 ;;; Code:
 
-(menu-bar-mode -1)
+;; Keep menu only for macOS UI frames
+
+(defun dm-disable-menu-in-terminal-frames (frame)
+  "Disable menu if passed FRAME is displayed on a text terminal."
+  (if (eq (framep frame) 't)
+      (set-frame-parameter frame'menu-bar-lines 0)))
+
+(if (not (eq system-type 'darwin))
+    (menu-bar-mode -1)
+  (add-hook 'after-make-frame-functions #'dm-disable-menu-in-terminal-frames))
+
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
