@@ -8,8 +8,6 @@
 ;; It's XXI century
 (setq gc-cons-threshold 100000000)
 
-(package-initialize)
-
 (defvar dm/lisp-dir (expand-file-name "lisp" user-emacs-directory))
 
 (add-to-list 'load-path dm/lisp-dir)

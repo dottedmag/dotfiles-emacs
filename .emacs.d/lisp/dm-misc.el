@@ -12,6 +12,8 @@
 
 (which-key-mode t)
 
+(package-initialize)
+
 ;; remove GNU advertisments
 
 (mapcar 'global-unset-key
