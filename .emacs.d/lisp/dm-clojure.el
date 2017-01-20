@@ -24,7 +24,9 @@
   (prettify-symbols-mode 1))
 
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
+(add-hook 'cider-repl-mode-hook #'enable-paredit-mode)
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'clojure-mode-hook #'dm/clojure-prettify-symbols)
 
 (provide 'dm-clojure)
