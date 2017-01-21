@@ -51,6 +51,7 @@
  "dm-python"
  "dm-rust"
  "dm-savehist"
+ "dm-scheme"
  "dm-smartparens"
  "dm-tiddlywiki"
  "dm-tramp"
