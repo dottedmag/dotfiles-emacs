@@ -5,6 +5,7 @@
 ;;; Code:
 
 (defvar el-get-dir "~/.var-emacs/el-get")
+(defvar package--init-file-ensured t)
 (add-to-list 'load-path
              (concat (file-name-as-directory el-get-dir) "el-get"))
 
