@@ -6,6 +6,10 @@
 
 (require 'whitespace)
 
+(setq-default
+ whitespace-display-mappings
+ (remove '(space-mark ?\  [?·] [?.]) whitespace-display-mappings))
+
 (defun dm/enable-whitespace-mode ()
   "Enables whitespace mode in $HOME, except ~/srcs."
   (let* ((home (expand-file-name "~"))
@@ -17,7 +21,8 @@
 
 (add-hook 'find-file-hook #'dm/enable-whitespace-mode)
 
-(setq whitespace-style '(face trailing tabs lines-tail empty tab-mark))
+(setq whitespace-style
+      '(face trailing tabs lines-tail empty tab-mark space-mark))
 
 (provide 'dm-whitespace)
 ;;; dm-whitespace.el ends here
