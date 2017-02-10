@@ -40,6 +40,7 @@
  "dm-j"
  "dm-javascript"
  "dm-json"
+ "dm-markdown"
  "dm-misc"
  "dm-objc"
  "dm-org-mode"
@@ -55,10 +56,12 @@
  "dm-smartparens"
  "dm-tiddlywiki"
  "dm-tramp"
+ "dm-web"
  "dm-whitespace"
  "dm-woman"
  "dm-x"
- "dm-xml")
+ "dm-xml"
+ "dm-yaml")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
