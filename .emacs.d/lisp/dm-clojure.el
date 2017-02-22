@@ -23,6 +23,10 @@
          prettify-symbols-alist))
   (prettify-symbols-mode 1))
 
+(push '(cider-cljs-lein-repl
+       . "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
+      safe-local-variable-values)
+
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
 (add-hook 'cider-repl-mode-hook #'enable-paredit-mode)
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
