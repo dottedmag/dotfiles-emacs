@@ -16,6 +16,8 @@
 
 (setq vc-handled-backends (delq 'Git vc-handled-backends))
 
+(global-set-key (kbd "C-x g") 'magit-status)
+
 (defun gitk ()
   "Run gitk in current directory."
   (interactive)
