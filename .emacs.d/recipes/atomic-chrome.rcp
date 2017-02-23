@@ -1,0 +1,5 @@
+(:name atomic-chrome
+       :description "Atomic Chrome for Emacs"
+       :type github
+       :pkgname "alpha22jp/atomic-chrome"
+       :depends (websocket))

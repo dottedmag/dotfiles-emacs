@@ -18,6 +18,7 @@
 (load "~/.emacs.d/lisp/dm-functions.el")
 
 (load-init
+ "dm-atomic-chrome"
  "dm-el-get"
  "dm-path"
  "dm-dvorak"
