@@ -10,6 +10,12 @@
 
 (require 'magit)
 
+(magit-wip-after-apply-mode)
+(magit-wip-after-save-mode)
+(magit-wip-before-change-mode)
+
+(setq vc-handled-backends (delq 'Git vc-handled-backends))
+
 (defun gitk ()
   "Run gitk in current directory."
   (interactive)
