@@ -48,7 +48,6 @@
  "dm-org-mode"
  "dm-parens"
  "dm-perl"
- "dm-popup"
  "dm-prettify-symbols"
  "dm-programming"
  "dm-python"
