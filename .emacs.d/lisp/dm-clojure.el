@@ -8,6 +8,7 @@
 (require 'dm-paredit)
 (require 'dm-rainbow)
 (require 'dm-prettify-symbols)
+(require 'dm-company)
 
 (dm-el-get 'cider 'clj-refactor)
 
@@ -32,6 +33,8 @@
 (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'clojure-mode-hook #'dm/clojure-prettify-symbols)
+(add-hook 'cider-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'company-mode)
 
 (provide 'dm-clojure)
 ;;; dm-clojure.el ends here
