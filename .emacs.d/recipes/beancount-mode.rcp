@@ -1,0 +1,7 @@
+(:name beancount-mode
+       :description "Minor mode for editing Beancount documents"
+       :type hg
+       :url "https://bitbucket.org/blais/beancount"
+       :load-path ("./src/elisp")
+       :prepare (add-to-list 'auto-mode-alist
+                             (cons "\\.beancount\\'" 'beancount-mode)))

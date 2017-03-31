@@ -24,6 +24,7 @@
  "dm-dvorak"
  "dm-auto-save"
  "dm-backup"
+ "dm-beancount"
  "dm-c"
  "dm-cvs"
  "dm-clojure"
