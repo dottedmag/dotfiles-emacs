@@ -51,6 +51,7 @@
  "dm-perl"
  "dm-prettify-symbols"
  "dm-programming"
+ "dm-projectile"
  "dm-python"
  "dm-rust"
  "dm-savehist"
