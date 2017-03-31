@@ -41,5 +41,7 @@
 (require 'ido)
 (ido-mode t)
 
+(setq-default eshell-directory-name (expand-file-name "~/.var-emacs/eshell"))
+
 (provide 'dm-misc)
 ;;; dm-misc.el ends here
