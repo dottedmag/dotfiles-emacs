@@ -1,6 +1,15 @@
-(require 'js)
+;;; dm-javascript -- JavaScript editing
 
-(add-to-list 'auto-mode-alist '("\\.js6\\'" . javascript-mode))
-(add-to-list 'interpreter-mode-alist '("node" . js-mode))
+;;; Commentary:
 
-(define-key js-mode-map "\C-m" 'newline-and-indent)
+;;; Code:
+
+(require 'dm-el-get)
+
+(dm-el-get 'js2-mode 'rjsx-mode)
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'interpreter-mode-alist '("node" . js2-mode))
+
+(provide 'dm-javascript)
+;;; dm-javascript.el ends here
