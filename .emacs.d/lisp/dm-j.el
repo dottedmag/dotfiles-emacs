@@ -32,6 +32,6 @@
   :command ("runfyvaproldzh" source-inplace)
   :error-patterns
   ((error line-start (file-name) ":" line ":" column ": " (message) line-end))
-  :modes (js-mode))
+  :modes (js-mode web-mode))
 
 (add-to-list 'flycheck-checkers 'fyvaproldzh)
