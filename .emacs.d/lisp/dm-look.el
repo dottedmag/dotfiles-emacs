@@ -21,6 +21,8 @@
 ;; Turn off splash screen
 (setq inhibit-startup-message t)
 
+(setq-default indicate-buffer-boundaries t)
+
 (blink-cursor-mode t)
 
 (setq blink-cursor-delay 0.3
