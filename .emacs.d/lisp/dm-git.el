@@ -6,7 +6,7 @@
 
 (require 'dm-el-get)
 
-(dm-el-get 'magit)
+(dm-el-get 'magit 'git-gutter-fringe+)
 
 (require 'magit)
 
@@ -17,6 +17,8 @@
 (setq vc-handled-backends (delq 'Git vc-handled-backends))
 
 (global-set-key (kbd "C-x g") 'magit-status)
+
+(global-git-gutter+-mode)
 
 (defun gitk ()
   "Run gitk in current directory."
