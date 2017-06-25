@@ -52,7 +52,7 @@
   (dm/darwin-keybindings)
   (setq exec-path (cons (expand-file-name "~/bin") exec-path))
   (defalias 'x 'dm/darwin-x)
-  (defalias 'f 'dm/darwin-x)
+  (defalias 'f 'dm/darwin-finder)
   (add-hook 'after-make-farme-functions 'dm/darwin-raise-new-cocoa-frame t))
 
 (when (eq system-type 'darwin)
