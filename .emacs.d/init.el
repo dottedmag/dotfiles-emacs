@@ -22,7 +22,6 @@
  "dm-el-get"
  "dm-path"
  "dm-dvorak"
- "dm-auto-save"
  "dm-backup"
  "dm-beancount"
  "dm-c"
