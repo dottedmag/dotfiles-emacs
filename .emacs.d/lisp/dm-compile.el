@@ -4,7 +4,10 @@
 
 ;;; Code:
 
-(setq compilation-ask-about-save nil)
+(require 'compile)
+
+(setq compilation-ask-about-save nil
+      compilation-scroll-output 'first-error)
 
 (provide 'dm-compile)
 ;;; dm-compile.el ends here
