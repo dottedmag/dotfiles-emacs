@@ -5,6 +5,7 @@
 ;;; Code:
 
 (setq mouse-yank-at-point t
+      mouse-wheel-scroll-amount '(1)
       frame-title-format "%b - emacs")
 (mouse-avoidance-mode 'exile)
 
