@@ -64,4 +64,5 @@
  "dm-woman"
  "dm-x"
  "dm-xml"
- "dm-yaml")
+ "dm-yaml"
+ "dm-vc")
