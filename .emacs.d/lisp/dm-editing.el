@@ -8,6 +8,10 @@
 (setq line-move-visual nil
       track-eol t)
 
+(save-place-mode 1)
+
+(setq save-place-file (expand-file-name "~/.var-emacs/places"))
+
 (put 'narrow-to-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
