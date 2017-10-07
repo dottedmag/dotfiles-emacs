@@ -7,6 +7,7 @@
 (require 'dm-el-get)
 
 (dm-el-get 'org-mode)
+(dm-el-get 'diminish)
 
 (require 'org-install)
 (require 'org-mobile)
@@ -31,6 +32,8 @@
       org-stuck-projects '("+LEVEL=2/-DONE" nil ("*") ""))
 
 ; Shortcut for M-x calendar
+
+(diminish 'org-indent-mode)
 
 (defalias 'cal 'calendar)
 
