@@ -33,8 +33,6 @@
 
 ; Shortcut for M-x calendar
 
-(diminish 'org-indent-mode)
-
 (defalias 'cal 'calendar)
 
 (provide 'dm-org-mode)
