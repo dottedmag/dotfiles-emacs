@@ -6,12 +6,12 @@
 
 (dm-el-get 'atomic-chrome)
 
-(require 'atomic-chrome)
+;;(require 'atomic-chrome)
 
-(setq atomic-chrome-buffer-open-style 'split)
-(setq atomic-chrome-extension-type-list '(ghost-text))
+;;(setq atomic-chrome-buffer-open-style 'split)
+;;(setq atomic-chrome-extension-type-list '(ghost-text))
 
-(atomic-chrome-start-server)
+;;(atomic-chrome-start-server)
 
 ;;; Code:
 
