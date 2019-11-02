@@ -9,3 +9,5 @@
              '("vu\\'" "\\`root\\'" "/ssh:%h:"))
 (add-to-list 'tramp-default-proxies-alist
              '("vu32\\'" "\\`root\\'" "/ssh:%h:"))
+
+(add-to-list 'tramp-remote-path 'tramp-own-remote-path)
