@@ -25,7 +25,7 @@
 
 (blink-cursor-mode t)
 
-(setq blink-cursor-delay 0.3
+(setq blink-cursor-delay 0
       blink-cursor-interval 0.1
       blink-cursor-blinks 0
       column-number-mode t
