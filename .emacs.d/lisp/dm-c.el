@@ -1,3 +1,11 @@
+;;; dm-c -- Configuration for C
+
+;;; Commentary:
+
+;;; Code:
+
+(require 'dm-el-get)
+(require 'dm-functions)
 (require 'cc-mode)
 
 (setq c-default-style "stroustrup"
@@ -14,7 +22,7 @@
 (add-hook 'c-mode-common-hook #'declare-linux-tabs-only)
 
 (defun declare-linux-tabs-only ()
-  ;; Add kernel style
+  "Mode hook for Linux C configuration."
   (c-add-style
    "linux-tabs-only"
    '("linux" (c-offsets-alist
@@ -27,6 +35,7 @@
 (define-key c-mode-base-map "\C-m" 'newline-and-indent)
 
 (defun c-mode-setup ()
+  "Mode hook for C configuration."
   (c-toggle-auto-hungry-state 1))
 
 (add-hook 'c-mode-common-hook 'c-mode-setup)
@@ -35,6 +44,7 @@
 ;; -- kernel coding style --
 
 (defun c-kernel-mode-hook ()
+  "Mode hook for Linux kernel configuration."
   (let ((filename (buffer-file-name)))
     ;; Enable kernel mode for the appropriate files
     (when (and filename
@@ -48,3 +58,6 @@
 ;; - select from several tags interactively
 
 (global-set-key "\M-." 'etags-select-find-tag)
+
+(provide 'dm-c)
+;;; dm-c.el ends here
