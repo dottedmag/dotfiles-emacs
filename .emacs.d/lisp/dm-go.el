@@ -17,7 +17,7 @@
 
 (defun dm-go-setup-whitespace ()
   "Adjust `whitespace-mode' settings for Go."
-  ;; FIXME: Find the way to use default background color, not fied "white"
+  ;; FIXME: Find the way to use default background color, not fixed "white"
   ;; FIXME: Light gray highlight of TABs inside selection
   (face-remap-add-relative 'whitespace-tab :background "white")
   (make-local-variable 'whitespace-line-column)
