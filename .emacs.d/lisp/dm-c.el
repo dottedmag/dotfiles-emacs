@@ -8,6 +8,8 @@
 (require 'dm-functions)
 (require 'cc-mode)
 
+(dm-el-get 'clang-format)
+
 (setq c-default-style "stroustrup"
       c-basic-offset 4
       c-hanging-braces-alist nil
@@ -21,6 +23,12 @@
 
 (add-hook 'c-mode-common-hook #'declare-linux-tabs-only)
 
+(add-hook 'c-mode-common-hook
+          (lambda ()
+    (add-hook (make-local-variable 'before-save-hook)
+              'clang-format-buffer)))
+
+;; Add kernel style
 (defun declare-linux-tabs-only ()
   "Mode hook for Linux C configuration."
   (c-add-style
