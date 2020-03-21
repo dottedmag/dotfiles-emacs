@@ -56,10 +56,17 @@
   (defalias 'f 'dm/darwin-finder)
   (add-hook 'after-make-farme-functions 'dm/darwin-raise-new-cocoa-frame t))
 
+(defun dm/mac-setup ()
+  "Set up Emacs for OS X (mituharu emacs-mac port)."
+  (setq mac-option-modifier 'meta)
+  (setq mac-command-modifier 'super))
+
 (when (eq system-type 'darwin)
   (dm/darwin-setup))
 (when (eq system-type 'gnu/linux)
   (dm/x-setup))
+(when (eq window-system 'mac)
+  (dm/mac-setup))
 
 (provide 'dm-x)
 ;;; dm-x.el ends here
