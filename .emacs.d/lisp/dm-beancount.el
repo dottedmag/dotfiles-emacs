@@ -11,30 +11,12 @@
 
 (defvar dm-bean-format-bin "bean-format")
 
-(defun dm-bean-format-call (buffer)
-  "Call bean-format on a a BUFFER."
-  (with-current-buffer (get-buffer-create "*bean-format*")
-    (erase-buffer)
-    (insert-buffer-substring buffer)
-    (if (zerop (call-process-region
-                (point-min) (point-max) dm-bean-format-bin t t nil))
-        (progn (copy-to-buffer buffer (point-min) (point-max))
-               (kill-buffer))
-      (display-buffer (current-buffer))
-      (error
-       "Running bean-format failed, see *bean-format* buffer for details"))))
-
 (defun dm-bean-format-buffer ()
-  "Format the current buffer using bean-format."
+  "Format the current buffer using bean-format from B to E."
   (interactive)
   (unless (executable-find dm-bean-format-bin)
     (error "Could not locate executable \"%s\"" dm-bean-format-bin))
-  (let ((cur-point (point))
-        (cur-win-start (window-start)))
-    (dm-bean-format-call (current-buffer))
-    (goto-char cur-point)
-    (set-window-start (selected-window) cur-win-start))
-  (message "Formatted buffer with bean-format"))
+  (call-process-region (point-min) (point-max) "bean-format" t t t))
 
 (defun dm-bean-format-add-hook ()
   "Add before-save hook to format .beancount."
