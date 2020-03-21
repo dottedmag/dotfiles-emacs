@@ -6,6 +6,8 @@
 
 (require 'whitespace)
 
+(setq-default whitespace-line-column 120)
+
 (setq-default
  whitespace-display-mappings
  (remove '(space-mark ?\  [?·] [?.]) whitespace-display-mappings))
