@@ -26,5 +26,7 @@
 (setq whitespace-style
       '(face trailing tabs lines-tail empty tab-mark space-mark))
 
+(set-face-attribute 'whitespace-line nil :background "white" :underline t)
+
 (provide 'dm-whitespace)
 ;;; dm-whitespace.el ends here

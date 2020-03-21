@@ -8,6 +8,8 @@
 (setq line-move-visual nil
       track-eol t)
 
+(setq-default truncate-lines t)
+
 (save-place-mode 1)
 
 (setq save-place-file (expand-file-name "~/.var-emacs/places"))
