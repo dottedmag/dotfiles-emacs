@@ -14,6 +14,11 @@
   (interactive)
   (start-process "finder" nil "open" "."))
 
+(defun dm/darwin-kitty ()
+  "Run Kitty in current directory."
+  (interactive)
+  (start-process "kitty" nil "kitty" "-1"))
+
 (defun dm/x-x ()
   "Run X terminal in turrent directory."
   (interactive)
@@ -22,11 +27,6 @@
 (defun dm/x-setup ()
   "Set up Emacs for Linux/X."
   (defalias 'x 'dm/x-x))
-
-(defun dm/darwin-x ()
-  "Run iTerm in current directory."
-  (interactive)
-  (start-process "iterm" nil "runiterm" default-directory))
 
 (defun dm/darwin-raise-new-cocoa-frame (frame)
   "Puts newly created FRAME under Cocoa into foreground."
@@ -52,7 +52,7 @@
   "Set up Emacs for OS X."
   (dm/darwin-keybindings)
   (setq exec-path (cons (expand-file-name "~/bin") exec-path))
-  (defalias 'x 'dm/darwin-x)
+  (defalias 'x 'dm/darwin-kitty)
   (defalias 'f 'dm/darwin-finder)
   (add-hook 'after-make-farme-functions 'dm/darwin-raise-new-cocoa-frame t))
 
