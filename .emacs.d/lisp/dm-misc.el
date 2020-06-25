@@ -39,6 +39,11 @@
 (require 'ido)
 (ido-mode t)
 
+;; remove useless default keybindings
+
+(define-key global-map [XF86Forward] nil)
+(define-key global-map [XF86Back] nil)
+
 (setq-default eshell-directory-name (expand-file-name "~/.var-emacs/eshell"))
 
 (provide 'dm-misc)
