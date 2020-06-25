@@ -8,12 +8,13 @@
 
 (dm-el-get 'org-mode)
 (dm-el-get 'diminish)
+(dm-el-get 'org-roam)
 
 (require 'org-install)
 (require 'org-mobile)
 
 (setq-default org-complex-heading-regexp "athuasuthasnteohuosethu"
-              org-startup-indented t)
+              org-startup-indented nil)
 
 (add-to-mode-alist-ext 'org-mode "org")
 
