@@ -22,7 +22,8 @@
 (define-key global-map "\C-ca" 'org-agenda)
 
 (defun fix-org-mode-hotkey ()
-  (define-key org-mode-map [?\C-,] 'switch-to-prev-window))
+  (define-key org-mode-map [?\C-,] 'switch-to-prev-window)
+  (define-key org-mode-map [?\r] 'org-return-and-maybe-indent))
 
 (add-hook 'org-mode-hook 'fix-org-mode-hotkey)
 
